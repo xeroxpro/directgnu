@@ -11,8 +11,8 @@
 SCRIPT=/usr/local/bin/direct
 RUNAS=root
 
-PIDFILE=/var/run/fintech.pid
-LOGFILE=/var/log/fintech.log
+PIDFILE=/var/run/direct.pid
+LOGFILE=/var/log/direct.log
 
 start() {
   if [ -f /var/run/$PIDNAME ] && kill -0 $(cat /var/run/$PIDNAME); then
